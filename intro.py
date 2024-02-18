@@ -189,7 +189,6 @@ history = modelo.fit(train_generator,
                  'cant_ima_val_masculino': 'Validación imágenes hombre',
                  'cant_ima_test_femenino': 'Test imágenes mujer',
                  'cant_ima_test_masculino': 'Test imágenes hombre',
-                 # Añade más pares de nombres de columnas originales y nuevos según sea necesario
              }
 
              df1 = df1.rename(columns=nuevos_nombres)
