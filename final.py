@@ -19,11 +19,11 @@ def final():
     col1, col2 = st.columns([1, 0.1])
 
     image2 = Image.open(
-        "C:\\Users\\esthe\\Downloads\\BOOTCAMP\\mod7-streamlit-master\\streamlit\\sources\\imagenes\\grupo.jpg")
+        "imagenes/grupo.jpg")
     col1.image(image=image2, width=700)
 
     image1 = Image.open(
-        "C:\\Users\\esthe\\Downloads\\BOOTCAMP\\mod7-streamlit-master\\streamlit\\sources\\imagenes\\hack.jpg")
+        "imagenes/hack.jpg")
     col2.image(image=image1, width=50)
 
     # Mostramos la pregunta en la primera columna
