@@ -11,9 +11,7 @@ import matplotlib.image as mpimg
 from keras.preprocessing import image
 import tensorflow as tf
 from keras.models import Sequential
-from keras.models import Sequential
 from keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Dropout
-# from keras.preprocessing.image import ImageDataGenerator
 from prueba import prueba
 import seaborn as sns
 import plotly.express as px
