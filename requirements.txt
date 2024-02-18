@@ -11,3 +11,5 @@ ast
 random
 tensorflow
 PIL
+pickle
+os
