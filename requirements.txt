@@ -5,3 +5,8 @@ seaborn
 requestscle
 pillow
 plotly
+matplotlib
+keras
+ast
+random
+tensorflow
