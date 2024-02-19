@@ -18,7 +18,7 @@ def modelo_edad():
     st.title('¿En qué rango de edad te encuentras? :thinking_face:')
     st.subheader('	:arrow_left: Sube una foto en la que aperezca una cara')
 # Cargar el modelo desde el archivo pickle
-    modelo = load_model("modelo_edad.hjk")
+    modelo = load_model("modelo_edad.h5.hjk")
 
     uploaded_file = st.sidebar.file_uploader(label="***:warning: Sube la foto :warning:***", type=["jpg"])
 
