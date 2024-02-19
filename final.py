@@ -19,11 +19,11 @@ def final():
     col1, col2 = st.columns([1, 0.1])
 
     image2 = Image.open(
-        "imagenes/grupo.jpg")
+        "https://github.com/Esthergg93/proyecto3/blob/main/imagenes/grupo.jpg")
     col1.image(image=image2, width=700)
 
     image1 = Image.open(
-        "imagenes/hack.jpg")
+        "https://github.com/Esthergg93/proyecto3/blob/main/imagenes/hack.jpg")
     col2.image(image=image1, width=50)
 
     # Mostramos la pregunta en la primera columna
