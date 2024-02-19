@@ -32,7 +32,7 @@ def main():
 
         st.title("Proyecto final: Convolutional Neural Networks (CNN) ")
         image2 = Image.open(
-            "imagenes/hack.jpg")
+            "https://github.com/Esthergg93/proyecto3/blob/main/imagenes/hack.jpg")
         st.image(image=image2, width=400)
 
         st.subheader('Beatriz Mimosa')
