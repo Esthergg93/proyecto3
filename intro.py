@@ -33,7 +33,7 @@ def intro():
         st.title("Modelo de estimación del sexo :clapper:")
 
         image = Image.open(
-            "imagenes/intro_principal.jpg")
+            "https://github.com/Esthergg93/proyecto3/blob/main/imagenes/intro_principal.jpg")
         st.image(image=image,
                  caption="Masculino vs Femenino",
                  width=400)
@@ -52,7 +52,7 @@ def intro():
                             [Open IMDB-WIKI](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/).""")
              st.write("Aquí mostramos la cantidad de imágenes que se han utilizado para realizar el modelo en las distintas fases de Train, Test y Validación")
              df1 = pd.read_csv(
-                 "datos_f_m/datos_numero_fotos.csv")
+                 "https://github.com/Esthergg93/proyecto3/blob/main/datos_f_m/datos_numero_fotos.csv")
 
              nuevos_nombres = {
                  'cant_ima_entre_femenino': 'Entrenamiento imágenes mujer',
@@ -163,7 +163,7 @@ history = modelo.fit(train_generator,
         if choice == "Métricas":
 
             df = pd.read_csv(
-                "datos_f_m/Metricas.csv")
+                "https://github.com/Esthergg93/proyecto3/blob/main/datos_f_m/Metricas.csv")
 
             accuracy = df["accuracy"][0][-18:-2]
             loss = df["loss"][0][-19:-2]
@@ -178,7 +178,7 @@ history = modelo.fit(train_generator,
              tab1, tab2, tab3 = st.tabs(["Gráfica de los datos", "Accuracy", "Perdidas"])
 
              df1 = pd.read_csv(
-                 "datos_f_m/datos_numero_fotos.csv")
+                 "https://github.com/Esthergg93/proyecto3/blob/main/datos_f_m/datos_numero_fotos.csv")
 
              nuevos_nombres = {
                  'cant_ima_entre_femenino': 'Entrenamiento imágenes mujer',
@@ -202,7 +202,7 @@ history = modelo.fit(train_generator,
 
 
 
-             grafica1 = Image.open("datos_f_m/Performance de mi red neuronal2.png")
+             grafica1 = Image.open("https://github.com/Esthergg93/proyecto3/blob/main/datos_f_m/Performance%20de%20mi%20red%20neuronal2.png")
              with tab2:
                  st.image(image=grafica1,
                           caption="Performance de la red neuronal",
@@ -210,14 +210,14 @@ history = modelo.fit(train_generator,
              grafica2 = Image.open("datos_f_m/Training and validation loss.png")
              with tab3:
                  st.image(image=grafica2,
-                          caption="Training and validation loss",
+                          caption="https://github.com/Esthergg93/proyecto3/blob/main/datos_f_m/Training%20and%20validation%20loss.png",
                           use_column_width=True)
 
 
     if modelos == "Estimación de la edad en rangos":
         st.title("Estimación de la edad en rangos :baby_bottle:	:glass_of_milk::beer::wine_glass:")
         image = Image.open(
-            "imagenes/edad1.jpg")
+            "https://github.com/Esthergg93/proyecto3/blob/main/imagenes/edad1.jpg")
         st.image(image=image,
                  use_column_width=True)
 
@@ -238,7 +238,7 @@ history = modelo.fit(train_generator,
             st.write("Para ello hemos trabajado con distintos tipos de datos. En un primer momento, clasificamos a mano datos de fotos con un csv que contenía la información de la edad.")
             st.write(" A continuación mostramos el csv con la información:")
             df7 = pd.read_csv(
-                "datos_mod2/primer.csv",)
+                "https://github.com/Esthergg93/proyecto3/blob/main/datos_mod2/primer.csv",)
 
             st.dataframe(df7)
 
@@ -246,7 +246,7 @@ history = modelo.fit(train_generator,
             st.write("Los resultados obtenidos, tras la clasificación manual y el entrenamiento del modelo, no eran buenos, el modelo no entrenaba y por tanto las métricas no cambiaban. Determinamos la necesidad de incluir más datos para poder entrenar el modelo.")
             st.write("Mostramos el resultado de los primeros datos de entrenamiento con accuracy constante:")
             image = Image.open(
-                "datos_mod2/acc.jpg")
+                "https://github.com/Esthergg93/proyecto3/blob/main/datos_mod2/acc.jpg")
             st.image(image=image,
                      caption="Estimación de la edad",
                      width=700)
@@ -263,7 +263,7 @@ history = modelo.fit(train_generator,
             st.write(
                 "Aquí mostramos la cantidad de imágenes que se han utilizado para realizar el modelo en las distintas fases de Train, Test y Validación:")
             df10 = pd.read_csv(
-                "datos_mod2/datos_num.csv")
+                "https://github.com/Esthergg93/proyecto3/blob/main/datos_mod2/datos_num.csv")
 
 
             fig_bar = px.bar(data_frame=df10,
@@ -382,7 +382,7 @@ history = modelo.fit(X_train, y_train, validation_data = (X_test, y_test), epoch
             pass
         if choice == "Métricas":
             df11 = pd.read_csv(
-                "Scores (1).csv")
+                "https://github.com/Esthergg93/proyecto3/blob/main/Scores%20(1).csv")
 
             accuracy = df11['0'].iloc[1]
             loss = df11['0'].iloc[0]
@@ -393,7 +393,7 @@ history = modelo.fit(X_train, y_train, validation_data = (X_test, y_test), epoch
         if choice == "Gráficas":
             tab1, tab2, tab3 = st.tabs(["Gráfica de los datos", "Accuracy", "Perdidas"])
 
-            df2 = pd.read_csv("datos_mod2/conteo_sexo.csv")
+            df2 = pd.read_csv("https://github.com/Esthergg93/proyecto3/blob/main/datos_mod2/conteo_sexo.csv")
 
             with tab1:
                 fig_bar = px.bar(data_frame=df2,
@@ -404,13 +404,13 @@ history = modelo.fit(X_train, y_train, validation_data = (X_test, y_test), epoch
                 st.plotly_chart(fig_bar)
 
             grafica1 = Image.open(
-                "datos_mod2/WhatsApp Image 2024-02-15 at 10.46.50.jpeg")
+                "https://github.com/Esthergg93/proyecto3/blob/main/datos_mod2/WhatsApp%20Image%202024-02-15%20at%2010.46.50.jpeg")
             with tab2:
                 st.image(image=grafica1,
                          caption="Performance de la red neuronal",
                          use_column_width=True)
             grafica2 = Image.open(
-                "datos_mod2/WhatsApp Image 2024-02-15 at 10.46.50 (1).jpeg")
+                "https://github.com/Esthergg93/proyecto3/blob/main/datos_mod2/WhatsApp%20Image%202024-02-15%20at%2010.46.50%20(1).jpeg")
             with tab3:
                 st.image(image=grafica2,
                          caption="Función de perdida",
@@ -419,7 +419,7 @@ history = modelo.fit(X_train, y_train, validation_data = (X_test, y_test), epoch
     if modelos == "Estimación de la edad":
         st.title("Estimación de la edad exacta	:bulb:")
         image = Image.open(
-            "imagenes/edad_concreta.jpg")
+            "https://github.com/Esthergg93/proyecto3/blob/main/imagenes/edad_concreta.jpg")
         st.image(image=image,
                  caption="Estimación de la edad",
                  width= 400)
@@ -519,7 +519,7 @@ modelo.summary()"""
             pass
         if choice == "Métricas":
             df11 = pd.read_csv(
-                "m_regresion/Scores_regresion.csv")
+                "https://github.com/Esthergg93/proyecto3/blob/main/m_regresion/Scores_regresion.csv")
 
             mse= df11['0'].iloc[0]
             mae = df11['0'].iloc[1]
@@ -534,25 +534,25 @@ modelo.summary()"""
 
             with tab1:
                 gra1 = Image.open(
-                    "m_regresion/mae.jpeg")
+                    "https://github.com/Esthergg93/proyecto3/blob/main/m_regresion/mae.jpeg")
                 st.image(image=gra1,
                          caption="Mae",
                          use_column_width=True)
             with tab2:
                 gra2 = Image.open(
-                     "m_regresion/dispersion.jpeg")
+                     "https://github.com/Esthergg93/proyecto3/blob/main/m_regresion/dispersion.jpeg")
                 st.image(image=gra2,
                          caption="Diagrama de dispersión",
                          use_column_width=True)
             with tab3:
                 gra3 = Image.open(
-                    "m_regresion/perdida.jpeg")
+                    "https://github.com/Esthergg93/proyecto3/blob/main/m_regresion/perdida.jpeg")
                 st.image(image=gra3,
                              caption="Función de pérdida",
                              use_column_width=True)
             with tab4:
                 gra4 = Image.open(
-                    "m_regresion/performance.jpeg")
+                    "https://github.com/Esthergg93/proyecto3/blob/main/m_regresion/performance.jpeg")
                 st.image(image=gra4,
                              caption="Performance del modelo de regresión",
                              use_column_width=True)
