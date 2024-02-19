@@ -18,7 +18,7 @@ def edad():
     st.title('¿Qué edad tienes? :thinking_face:')
     st.subheader(':camera_with_flash: Hazte una foto y ¡Lanza la predicción!')
 # Cargar el modelo desde el archivo pickle
-    modelo = load_model("modelo_regresion.hjk")
+    modelo = load_model("modelo_regresion.h5.hjk")
 
     edad = st.number_input("Ingresa tu edad", min_value=0, max_value=120, step=1)
     uploaded_file = st.camera_input("Tomar foto")
