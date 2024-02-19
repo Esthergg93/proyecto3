@@ -1,0 +1,18 @@
+Index: requirements.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/requirements.txt b/requirements.txt
+new file mode 100644
+--- /dev/null	(date 1708276914908)
++++ b/requirements.txt	(date 1708276914908)
+@@ -0,0 +1,7 @@
++numpy
++pandas
++streamlit
++seaborn
++requestscle
++pillow
++plotly
+\ No newline at end of file
